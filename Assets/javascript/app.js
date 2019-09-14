@@ -15,7 +15,7 @@ $.ajax({
     method: "GET"
 }).then(function (response) {
 
-    var gifDiv = $("<button class='gifs'>");
+    var gifDiv = $("<div class='gifs'>");
     var Rating = response.rating;
     var ratingDisplay = $("<p>").text("Rating: " + Rating);
     gifDiv.append(ratingDisplay);
@@ -25,8 +25,24 @@ $.ajax({
     
 });
 
+console.log(displayGifInfo);
+
 
 }
 
 
-fucntion renderButtons () {}
+function renderButtons () {
+
+    $("#buttons-view").empty();
+    for (var i = 0; i < topics.length; i++) {
+
+        var buttons = $("<button>");
+        buttons.addClass("gif-btn");
+        buttons.attr("data-name", topics[i]);
+        buttons.text(topics[i]);
+        $("#buttons-view").append(buttons);
+      
+    }
+
+} 
+renderButtons();
