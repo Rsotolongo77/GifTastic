@@ -1,0 +1,34 @@
+/*establish custom styling after reset*/
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(-45deg, #ee7652c9, #c03a3abe, #40859ede, #79cfbbb7);
+	background-size: 400% 400%;
+	animation: gradientBG 10s linear infinite;
+}
+
+
+
+
+
+.navbar {
+    height: 30vh;
+}
+
+
+
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
