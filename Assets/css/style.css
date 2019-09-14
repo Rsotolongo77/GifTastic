@@ -24,7 +24,9 @@ body {
     height: 60vh;
     background-color: rgba(245, 245, 245, 0.295);
     margin-top: 20px;
-    border-radius: 30px
+    border-radius: 30px;
+    padding: 20px;
+    
 }
 
 
