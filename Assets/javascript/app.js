@@ -1,3 +1,32 @@
 var APIKey = "hh9ypFLslCSgV8p8wP7IQnLgbwS0Kp88";
 
-var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=hh9ypFLslCSgV8p8wP7IQnLgbwS0Kp88&q=&limit=25&offset=0&rating=G&lang=en";
+var topics = ["The Office", "Dogs", "90s", "Parrots", "Awkward", "Drunk", "Computer", "Toy Story", "Laughing", "Happy Dance"];
+
+
+function displayGifInfo() {
+
+    var gifs = $(this).attr("data-name");
+
+    var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=hh9ypFLslCSgV8p8wP7IQnLgbwS0Kp88&q=" + gifs;
+
+
+$.ajax({
+    url: queryURL,
+    method: "GET"
+}).then(function (response) {
+
+    var gifDiv = $("<button class='gifs'>");
+    var Rating = response.rating;
+    var ratingDisplay = $("<p>").text("Rating: " + Rating);
+    gifDiv.append(ratingDisplay);
+    var imgUrl = response.data.images;
+    var img = $("<img>").attr("src",imgUrl);
+    gifDiv.append(img);
+    
+});
+
+
+}
+
+
+fucntion renderButtons () {}
