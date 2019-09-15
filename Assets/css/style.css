@@ -46,6 +46,29 @@ h1 {
 }
 
 
+.recents   {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px, 0px;
+    font-family: 'Special Elite', cursive;
+    
+    
+
+}
+
+.container-buttons {
+
+    border: 2px solid rgba(255, 255, 255, 0.274);
+    border-radius: 5px;
+}
+
+.form-group {
+
+    font-family: 'Special Elite', cursive;
+    
+}
 
 
 
