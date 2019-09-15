@@ -9,15 +9,53 @@ body {
 }
 
 
+h1 {
+
+    font-family: 'Special Elite', cursive;
+    margin: auto;
+    color: rgba(66, 66, 54, 0.938);
+    border: 5px solid rgba(15, 15, 15, 0.644);
+    border-radius: 10px;
+    background-color: rgba(0, 255, 170, 0.363);
+    
+}
+
+.display-4  {
+        padding-top: 7px;
+
+}
+
+
+
+#Submit-btn, #Clear-btn {
+
+    background-color: rgb(218, 175, 68);
+    height: 37px;
+    margin-bottom: 5px;
+    
+}
+
+#search {
+
+    height: 40px;
+    border-radius: 5px;
+    border:2px solid rgba(15, 15, 15, 0.644);
+  
+    
+   
+}
+
+
 
 
 
 .navbar {
     height: 20vh;
     background-color: rgba(211, 211, 211, 0.418);
-    border-radius: 30px;
+    border-radius: 20px;
     margin-top: 5px;
 }
+
 
 .jumbotron {
 

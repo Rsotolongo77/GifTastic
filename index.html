@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/css/style.css">
 
 
@@ -20,15 +22,32 @@
 
     <div class="container">
 
-        <!--navbar to hold buttons with assigned array index items-->
+        <!--navbar to hold search button and recent searches-->
         <nav class="navbar">
-                <div id="buttons-view"></div>
+            <h1 class="display-4"><b>GifTastic!</b></h1>
+            <div class="form">
+                <input type="text" id="search" class="form-regulate" placeholder="Search">
+                <button class="btn btn-warning" id="Submit-btn">Search</button>
+                <button class="btn btn-warning" id="Clear-btn">Clear Search</button>
+            </div>
+
         </nav>
+
+        <!--Favorites section-->
+        <div class="recents">
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="Favorites">
+                <label class="form-check-label" for="exampleCheck1">Favorites</label>
+            </div>
+        </div>
 
         <!--jumbotron to hold gifs-->
         <div class="jumbotron">
 
-            
+            <div id="gifs-view"></div>
+
+
 
         </div>
 
