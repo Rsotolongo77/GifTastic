@@ -5,7 +5,7 @@ function displayGifInfo() {
 
     var gif = $(this).attr("data-name");
 
-  
+
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=hh9ypFLslCSgV8p8wP7IQnLgbwS0Kp88&limit=10";
 
@@ -31,7 +31,7 @@ function displayGifInfo() {
 
     })
 
-    
+
 }
 
 
@@ -57,20 +57,37 @@ function renderButtons() {
 
 }
 
-$(document).on("click", ".gifs-created", function() {
+$(document).on("click", ".gifs-created", function () {
 
-    
+
     var state = $(this).attr("data-state");
-   
-    if (state === "still") {
-      $(this).attr("src", $(this).attr("data-animate"));
-      $(this).attr("data-state", "animate");
-    } else {
-      $(this).attr("src", $(this).attr("data-still"));
-      $(this).attr("data-state", "still");
-    }
-  });
 
+    if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+    }
+});
+
+
+$(document).on("click", "#add-gif", function () {
+    event.preventDefault();
+    $("input:text").click(
+        function () {
+            $(this).val("");
+        });
+
+
+    var userGif = $("#gif-input").val().trim();
+    buttons.push(userGif);
+    console.log(buttons);
+
+    renderButtons();
+
+
+})
 
 $(document).on("click", ".gif-button", displayGifInfo)
 
@@ -78,3 +95,4 @@ $(document).on("click", ".gif-button", displayGifInfo)
 
 
 renderButtons();
+

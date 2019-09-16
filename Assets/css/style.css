@@ -101,9 +101,28 @@ input {
 #gif-input  {
 
     color: rgb(49, 48, 48);
-    height: 36px;
+    height: 37px;
+    width: 8vw;
     
     
+}
+
+
+label  {
+
+    margin-right: 5px;
+    font-family: 'Special Elite', cursive;
+    font-size: larger;
+    color: rgb(64, 73, 72);
+}
+
+
+i {
+
+    color: rgb(209, 56, 56);
+    font-size: larger;
+
+
 }
 
 input, .gif-button:focus {
