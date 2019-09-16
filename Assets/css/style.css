@@ -29,7 +29,6 @@ h1 {
 #buttons-view {
 
     display: flex; 
-    
     margin-top: 15px;
 }
 
@@ -58,11 +57,40 @@ h1 {
 .gifs-created  {
 
     float: left;
-    border: 2px solid rgba(165, 158, 158, 0.767);
+    border: 3px solid rgba(66, 66, 54, 0.938);
     border-radius: 10px;
     margin: 5px;
     font-family: 'Special Elite', cursive;
     
+}
+
+p {
+
+    text-align: center;
+    margin-top: 5px;
+}
+
+input {
+
+    background-color: rgba(209, 209, 111, 0.925);
+    border: 2px solid rgb(49, 48, 48);
+    border-radius: 5px;
+    text-align: center;
+    height: 36px;
+    
+}
+
+#gif-input  {
+
+    color: rgb(49, 48, 48);
+    height: 36px;
+    
+    
+}
+
+input, .gif-button:focus {
+    
+    outline:0;
 }
 
 
