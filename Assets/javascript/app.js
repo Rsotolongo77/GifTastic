@@ -14,7 +14,8 @@ function displayGifInfo() {
         method: "GET"
     }).then(function (response) {
 
-
+        $("#gifs-view").empty();
+        $("#displayArea").remove();
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
 
@@ -57,6 +58,7 @@ function renderButtons() {
 }
 
 $(document).on("click", ".gifs-created", function() {
+
     
     var state = $(this).attr("data-state");
    

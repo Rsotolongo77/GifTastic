@@ -21,6 +21,22 @@ h1 {
     
 }
 
+#displayArea {
+
+    opacity: .2;
+    height: 67vh;
+    width: 77vw;
+    margin: auto;
+    text-align: center;
+    color: rgb(48, 48, 48);
+    margin-top: 10px;
+    position: fixed;
+   
+    
+    
+
+}
+
 .display-4  {
         padding-top: 7px;
 
@@ -38,7 +54,7 @@ h1 {
     font-family: 'Special Elite', cursive;
     background-color: rgba(211, 211, 211, 0.418);
     border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.74);
+    border: 2px solid rgb(0, 0, 0);
     height: 7vh;
     margin-right: 5px;
     
@@ -61,6 +77,7 @@ h1 {
     border-radius: 10px;
     margin: 5px;
     font-family: 'Special Elite', cursive;
+    background-color: rgba(39, 36, 36, 0.911);
     
 }
 
@@ -68,6 +85,7 @@ p {
 
     text-align: center;
     margin-top: 5px;
+    color: rgba(230, 224, 224, 0.911);
 }
 
 input {
