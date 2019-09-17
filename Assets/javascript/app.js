@@ -31,7 +31,7 @@ function displayGifInfo() {
             var gifDiv = $(`<div class="gifs-created">`);
             var p = $("<p>").text("Rating: " + results[i].rating);
             var gifImg = $("<img>");
-            gifImg.attr("src", results[i].images.fixed_height.url);
+            gifImg.attr("src", results[i].images.fixed_height_still.url);
             gifImg.attr("data-still", results[i].images.fixed_height_still.url);
             gifImg.attr("data-animate", results[i].images.fixed_height.url);
             gifImg.attr("data-state", "still");
