@@ -31,10 +31,10 @@ function displayGifInfo() {
             var gifDiv = $(`<div class="gifs-created">`);
             var p = $("<p>").text("Rating: " + results[i].rating);
             var gifImg = $("<img>");
-            gifImg.attr("src", results[i].images.fixed_height_still.url);
+            gifImg.attr("src", results[i].images.fixed_height.url);
             gifImg.attr("data-still", results[i].images.fixed_height_still.url);
             gifImg.attr("data-animate", results[i].images.fixed_height.url);
-            gifImg.attr("data-state", "still");
+            gifImg.attr("data-state", "animate");
             gifDiv.append(p);
             gifDiv.append(gifImg);
             $("#gifs-view").prepend(gifDiv);
@@ -70,7 +70,7 @@ function renderButtons() {
 //On click with contional established for toggle between still and animated images.//
 $(document).on("click", "img", function () {
 
-    
+
     var state = $(this).attr("data-state");
 
     if (state === "still") {
