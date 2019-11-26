@@ -7,6 +7,7 @@
 2. jQuery
 3. HTML 
 4. CSS
+5. Bootstrap
 
 ## How the app works:
 ### Users visit the site and are given a set of hardcoded options to enjoy. If the userr wishes to explore another topic under the giphy API they can enter their desired topic under the search form. 
