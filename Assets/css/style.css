@@ -24,12 +24,10 @@ h1 {
 
     opacity: .2;
     height: 67vh;
-    width: 77vw;
     margin: auto;
     text-align: center;
     color: rgb(48, 48, 48);
     margin-top: 10px;
-    position: fixed;
 }
 
 .display-4  {
